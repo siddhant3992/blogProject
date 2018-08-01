@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {connect} from 'react-redux';
 import uuid from 'uuid'
 import Header from "./Header";
-import {AddAction} from '../actions/postAction'
+import {AddAction} from '../actions/action'
 class AddBlog extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ class AddBlog extends Component {
   };
   render() {
     return (
-      <div className="addblog background">
+      <div className="addblog">
         <Header />
         <form onSubmit={this.handleSubmit}>
           <input
@@ -31,7 +31,7 @@ class AddBlog extends Component {
             type="text"
             ref={input => (this.Title = input)}
             placeholder="Enter the title of your blog"
-            autoFocus
+            required autoFocus
           />
           <br />
           <input
@@ -39,13 +39,13 @@ class AddBlog extends Component {
             type="text"
             ref={input => (this.author = input)}
             placeholder="Author Name"
-          />
+            required/>
           <br />
           <textarea
             className="textarea"
             ref={input => (this.blog = input)}
             placeholder="write your blog here"
-          />
+            required/>
           <br />
           <button className="subbtn" type="submit">
             SUBMIT

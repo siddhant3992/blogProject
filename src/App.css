@@ -1,3 +1,6 @@
+.App{
+  text-align: center;
+}
 .header {
   background: black;
   padding: 10px;
@@ -15,10 +18,8 @@
   color: rgb(143, 143, 143);
   margin: 5px 10px;
 }
-.background {
-  background-color: rgb(230, 230, 238);
+.addblog {
   text-align: center;
-  height: 98vh;
 }
 .textbox {
   width: 50vw;
@@ -39,55 +40,62 @@
   overflow: auto;
   margin-bottom: 10px;
 }
-.subbtn{
-    font-size: .9em;
-    font-weight: 700;
-    padding: 7px;
-    border-radius: 10px;
-    color:white;
-    background-color: #000;
+.subbtn {
+  font-size: 0.9em;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+  background-color: #000;
 }
-.blog-body{
+.blog-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 .blogList {
-    background-color: #787a80;
-    color: white;
-    padding: 8px 5px;
-    overflow: auto;
-    display: block;
-    text-decoration: none;
-    margin-bottom: 3px;
-    width: 50vw;
-    border-radius: 10px;
-  }
-  .blogtitle{
-    color:rgb(17, 17, 90);
-    width: 60vw;
-    font-size: 1.3em;
-    padding-bottom:5px ;
-    text-align: left;
-  }
-  .author{
-    color:grey;
-    width: 60vw;
-    font-weight: 100;
-    padding-bottom:10px ;
-    text-align: left;
-  }
-  .blog-desc{
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #cacdd1;
-    width: 60vw;
-    height: 60vh;
-    overflow: auto; 
-    word-wrap: break-word;
-    text-align: left;
-  }
+  background-color: #787a80;
+  color: white;
+  padding: 8px 5px;
+  overflow: auto;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3px;
+  width: 50vw;
+  border-radius: 10px;
+}
+.blogtitle {
+  color: rgb(17, 17, 90);
+  width: 60vw;
+  font-size: 1.3em;
+  padding-bottom: 5px;
+  text-align: left;
+}
+.author {
+  color: grey;
+  width: 60vw;
+  font-weight: 100;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.blog-desc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #cacdd1;
+  width: 60vw;
+  height: 60vh;
+  overflow: auto;
+  word-wrap: break-word;
+  text-align: left;
+}
+.blogList-Container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1

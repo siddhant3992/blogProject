@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddBlog from "./components/AddBlog.jsx";
 import BlogList from "./components/BlogList.jsx";
 import ViewBlog from "./components/ViewBlog.jsx";
+import EditBlog from './components/EditBlog.jsx';
 import store from './store';
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="/AddBlog" component={AddBlog} />
         <Route path="/BlogList" component={BlogList} />
         <Route path="/ViewBlog/:id" component={ViewBlog} />
+        <Route path="/EditBlog/:id" component={EditBlog} />
       </Switch>
     </Router>
   </Provider>,
