@@ -1,6 +1,27 @@
 .App{
   text-align: center;
 }
+.addblog {
+  text-align: center;
+  position: relative;
+}
+.alert {
+  display: none;
+  position: absolute;
+  top:50%;
+  right: 15%;
+  left: 15%;
+  padding: 25px;
+  color: white;
+  opacity: 1;
+  width:65%;
+  border-radius: 20px;
+  height:40px;
+  transition: opacity 0.6s;
+  background-color: rgb(78, 78, 82);
+  margin-bottom: 15px;
+}
+
 .header {
   background: black;
   padding: 10px;
@@ -17,9 +38,6 @@
   font-size: 1.2em;
   color: rgb(143, 143, 143);
   margin: 5px 10px;
-}
-.addblog {
-  text-align: center;
 }
 .textbox {
   width: 50vw;

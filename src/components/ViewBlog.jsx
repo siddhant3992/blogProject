@@ -4,9 +4,7 @@ import Header from "./Header";
 import { Link } from "react-router-dom";
 import {DeleteAction,GetAction} from '../actions/action'
 class ViewBlog extends Component {
-  componentWillMount() {
-    this.props.SetGetAction();
-    }
+  
   render() {
     return (
       <div className="background">
@@ -38,9 +36,6 @@ const mapDispatchToProps = dispatch => {
   return {
     DeleteAction: (id) => {
       dispatch(DeleteAction(id));
-    },
-    SetGetAction: () => {
-      dispatch(GetAction());
     }
   };
 };

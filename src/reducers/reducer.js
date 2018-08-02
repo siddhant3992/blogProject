@@ -9,7 +9,7 @@ const reducer = (state = [], action) => {
     case "EDIT_POST_FULFILLED":
       return state.map(
         post =>
-          post.id === action.id ? { ...post, editing: !post.editing } : post
+          post.id === action.id ? { ...post } : post
       );
     case "DELETE_POST":
       return state.filter(post => post.id !== action.id);

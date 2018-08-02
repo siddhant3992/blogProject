@@ -19,7 +19,7 @@ class EditBlog extends Component {
     this.Title.value = "";
     this.author.value = "";
     this.blog.value = "";
-    
+    document.querySelector(".alert").style.display = "block"
   };
   render() {
     return (
@@ -58,12 +58,15 @@ class EditBlog extends Component {
                 UPDATE
               </button>
              
-            </form>
+            </form>   
             );
           }
         })}
-
-        
+            <div class="alert success">
+             <Link to="/AddBlog"><button class="subbtn">Add post</button></Link>
+             <Link to="/BlogList"><button class="subbtn">All Post</button></Link>
+             <strong>Success!</strong> Your post updated successfully.
+           </div>
       </div>
     );
   }
