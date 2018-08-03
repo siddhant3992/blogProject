@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import {DeleteAction,GetAction} from '../actions/action'
+import {DeleteAction} from '../actions/action'
 class ViewBlog extends Component {
   
   render() {
